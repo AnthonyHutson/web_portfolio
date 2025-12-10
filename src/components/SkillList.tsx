@@ -1,18 +1,14 @@
+import SkillItem from "./SkillItem";
+
 interface Props {
-  heading: string;
-  skillName: string;
-  description: string;
+  skillType: string;
+  skillNames: string;
 }
 
-const SkillList = ({ heading, skillName, description }: Props) => {
+const SkillList = ({ skillType, skillNames }: Props) => {
   return (
     <>
-      <h1>{heading}</h1>
-      <ul className="list-group list-group-flush">
-        <li className="list-group-item">
-          {skillName} | {description}
-        </li>
-      </ul>
+      <SkillItem skillType={skillType} skillNames={skillNames}></SkillItem>
     </>
   );
 };
