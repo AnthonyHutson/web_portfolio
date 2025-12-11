@@ -5,7 +5,7 @@ interface Props {
   skillNames: string;
 }
 
-const SkillList = ({ skillType, skillNames }: Props) => {
+const SkillsList = ({ skillType, skillNames }: Props) => {
   return (
     <>
       <SkillItem skillType={skillType} skillNames={skillNames}></SkillItem>
@@ -13,4 +13,4 @@ const SkillList = ({ skillType, skillNames }: Props) => {
   );
 };
 
-export default SkillList;
+export default SkillsList;
