@@ -6,12 +6,8 @@ interface Props {
 const SkillItem = ({ skillType, skillNames }: Props) => {
   return (
     <>
-      <ul>
-        <b>{skillType}</b>
-        <em>
-          <li>{skillNames}</li>
-        </em>
-      </ul>
+      <b>{skillType}</b>
+      <li>{skillNames}</li>
     </>
   );
 };
