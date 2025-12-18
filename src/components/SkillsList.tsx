@@ -1,14 +1,20 @@
-import SkillItem from "./SkillItem";
+import SkillListItem from "./SkillItem";
+import type { SkillList } from "./Skills";
+import "./SkillsList.css";
 
 interface Props {
-  skillType: string;
-  skillNames: string;
+  skillList: SkillList;
 }
 
-const SkillsList = ({ skillType, skillNames }: Props) => {
+const SkillsList = ({ skillList }: Props) => {
   return (
     <>
-      <SkillItem skillType={skillType} skillNames={skillNames}></SkillItem>
+      <h2 className="sub-header">Skills and Tech Stack:</h2>
+      <div className="skillList">
+        {skillList.map((skillItem, ..._index) => (
+          <SkillListItem skillItem={skillItem}></SkillListItem>
+        ))}
+      </div>
     </>
   );
 };

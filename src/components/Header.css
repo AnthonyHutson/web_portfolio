@@ -1,0 +1,12 @@
+.main-header {
+    font-weight: bold;
+    text-align: center;
+}
+.photo {
+    height: 23rem;
+    width: 14rem;
+}
+.tagline {
+    font-weight: italic;
+    text-align: center;
+}

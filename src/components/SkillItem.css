@@ -1,0 +1,13 @@
+.skill-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 0rem;
+    padding: 5px;
+    padding-left: 0rem;
+}
+.skill-description {
+    font-weight: 550;
+    margin-left: 2rem;
+    padding: 5px;
+    padding-left: 0rem;
+}

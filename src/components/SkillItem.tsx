@@ -1,15 +1,19 @@
+import type { SkillItem } from "./Skills";
+import "./SkillItem.css";
+
 interface Props {
-  skillType: string;
-  skillNames: string;
+  skillItem: SkillItem;
 }
 
-const SkillItem = ({ skillType, skillNames }: Props) => {
+const SkillListItem = ({ skillItem }: Props) => {
   return (
     <>
-      <b>{skillType}</b>
-      <li>{skillNames}</li>
+      <b className="skill-name">{skillItem.skillName}</b>
+      <li className="skill-description" key={skillItem.id}>
+        {skillItem.skillDescription}
+      </li>
     </>
   );
 };
 
-export default SkillItem;
+export default SkillListItem;
