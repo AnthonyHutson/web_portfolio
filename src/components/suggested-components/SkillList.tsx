@@ -1,5 +1,6 @@
 import SkillListItem from "./SkillItem";
 import type { SkillList } from "./Skills";
+import "./SkillList.css";
 
 interface Props {
   skillList: SkillList;

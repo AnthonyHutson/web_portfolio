@@ -1,4 +1,5 @@
 import type { SkillItem } from "./Skills";
+import "./SkillItem.css";
 
 interface Props {
   skillItem: SkillItem;
