@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <h1 className="main-header">
-        Anthony Hutson, Aspiring Software Developer
+        Anthony Hutson, Aspiring Software Developer. I promise I'm not in love with Bradley Miller.
       </h1>
       <h2 className="tagline">
         <em>“Make today a great day!”</em>
